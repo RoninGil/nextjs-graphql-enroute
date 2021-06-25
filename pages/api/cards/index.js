@@ -1,0 +1,9 @@
+// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import {Deck} from '../../../lib/deck';
+
+const deck = new Deck();
+const table = deck.dispatchCards(5);
+export default function handler(req, res) {
+    res.status(200).json(table);
+  }
+  
