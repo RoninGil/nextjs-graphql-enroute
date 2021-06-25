@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './CardSymbols.module.scss';
 
 const CardSymbols = ({number, symbol, styleClass}) =>{
     const isNumber = !isNaN(number);
